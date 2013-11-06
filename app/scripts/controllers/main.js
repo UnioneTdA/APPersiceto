@@ -2,9 +2,12 @@
 
 angular.module('APPersicetoApp')
   .controller('MainCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
+    $scope.links = [
+      'News',
+      'Eventi',
+      'Mappa',
+      'Segnalazioni',
+      'Meteo',
+      'Sito'
     ];
   });
