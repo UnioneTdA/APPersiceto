@@ -3,11 +3,11 @@
 angular.module('APPersicetoApp')
   .controller('MainCtrl', function ($scope) {
     $scope.links = [
-      'News',
-      'Eventi',
-      'Mappa',
-      'Segnalazioni',
-      'Meteo',
-      'Sito'
+      {'name': 'News', 'url': '#/news'},
+      {'name': 'Eventi', 'url': '#/'},
+      {'name': 'Mappa', 'url': '#/'},
+      {'name': 'Segnalazioni', 'url': '#/'},
+      {'name': 'Meteo', 'url': '#/'},
+      {'name': 'Sito', 'url': '#/'}
     ];
   });

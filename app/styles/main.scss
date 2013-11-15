@@ -5,7 +5,7 @@ $iconWhiteSpritePath: "../images/glyphicons-halflings-white.png";
 
 /* Put your CSS here */
 html, body {
-  margin: 20px;
+    margin-top: 30px;
 }
 
 body {
@@ -13,20 +13,47 @@ body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #333;
 }
+.container {
+    width: 100%;
+}
 
-.hero-unit {
-    margin: 50px auto 0 auto;
-    width: 300px;
+.standard-unit {
+    margin: 20px auto 0 auto;
+    width: 100%;
+    max-width: 500px;
     font-size: 18px;
     font-weight: 200;
     line-height: 30px;
     background-color: #eee;
     border-radius: 6px;
-    padding: 60px;
+    padding: 10px 10px;
 }
 
-.hero-unit h1 {
+.standard-unit h1 {
     font-size: 30px;
     line-height: 1;
     letter-spacing: -1px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.menu {
+    text-align: center;
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        li {
+            margin: 5px 0;
+            padding: 0;
+        }
+    }
+}
+
+#home {
+
+}
+
+#news {
+
 }

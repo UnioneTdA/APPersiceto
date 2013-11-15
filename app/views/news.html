@@ -1,1 +1,10 @@
-<p>This is the news view.</p>
+<div id="news" class="standard-unit">
+  <h1>News</h1>
+  <div class="menu">
+    <ul>
+        <li ng-repeat="feed in feeds">
+          <a class="btn btn-default btn-lg btn-block" href="{{feed.url}}">{{feed.name}}</a>
+        </li>
+    </ul>
+  </div>
+</div>

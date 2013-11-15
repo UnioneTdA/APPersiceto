@@ -38,13 +38,13 @@
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#/news">News</a></li>
-            <li><a href="#/events">Eventi</a></li>
-            <li><a href="#/maps">Mappa</a></li>
-            <li><a href="#/reports">Segnalazioni</a></li>
-            <li><a href="#/weather">Meteo</a></li>
-            <li><a href="#/site">Sito</a></li>
+            <li data-toggle="collapse" data-target=".navbar-collapse"><a href="#">Home</a></li>
+            <li data-toggle="collapse" data-target=".navbar-collapse"><a href="#/news">News</a></li>
+            <li data-toggle="collapse" data-target=".navbar-collapse"><a href="#/events">Eventi</a></li>
+            <li data-toggle="collapse" data-target=".navbar-collapse"><a href="#/maps">Mappa</a></li>
+            <li data-toggle="collapse" data-target=".navbar-collapse"><a href="#/reports">Segnalazioni</a></li>
+            <li data-toggle="collapse" data-target=".navbar-collapse"><a href="#/weather">Meteo</a></li>
+            <li data-toggle="collapse" data-target=".navbar-collapse"><a href="#/site">Sito</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -92,6 +92,7 @@
     <script src="scripts/app.js"></script>
     <script src="scripts/controllers/main.js"></script>
     <script src="scripts/controllers/news.js"></script>
+    <script src="scripts/services/feedFactory.js"></script>
     <!-- endbuild -->
 </body>
 </html>
