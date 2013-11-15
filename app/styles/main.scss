@@ -1,0 +1,59 @@
+$iconSpritePath: "../images/glyphicons-halflings.png";
+$iconWhiteSpritePath: "../images/glyphicons-halflings-white.png";
+
+@import "sass-bootstrap/lib/bootstrap";
+
+/* Put your CSS here */
+html, body {
+    margin-top: 30px;
+}
+
+body {
+    background: #fafafa;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #333;
+}
+.container {
+    width: 100%;
+}
+
+.standard-unit {
+    margin: 20px auto 0 auto;
+    width: 100%;
+    max-width: 500px;
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 30px;
+    background-color: #eee;
+    border-radius: 6px;
+    padding: 10px 10px;
+}
+
+.standard-unit h1 {
+    font-size: 30px;
+    line-height: 1;
+    letter-spacing: -1px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.menu {
+    text-align: center;
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        li {
+            margin: 5px 0;
+            padding: 0;
+        }
+    }
+}
+
+#home {
+
+}
+
+#news {
+
+}
