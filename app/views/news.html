@@ -1,9 +1,27 @@
 <div id="news" class="standard-unit">
   <h1>News</h1>
-  <div class="menu">
-    <ul>
+    <div class="dropdown">
+      <button class="btn btn-default" type="button" tabindex="-1">{{loadButtonText}}</button>
+      <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+        <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu" role="menu">
         <li ng-repeat="feed in feeds">
-          <a class="btn btn-default btn-lg btn-block" href="{{feed.url}}">{{feed.name}}</a>
+          <a ng-click="loadFeed($event)" data-url="{{feed.url}}">{{feed.name}}</a>
+        </li>
+      </ul>
+    </div>
+      <span class="input-prepend" ng-show="entries.length > 0">
+        <input type="text" placeholder="Cerca" data-ng-model="filterText" />
+      </span>
+
+  <div class="row">
+    <ul>
+        <span ng-show="entries.length > 0">{{(entries | filter:filterText).length}} news</span>
+        <li ng-repeat="entry in entries | filter:filterText">
+            <h3><a href="{{entry.link}}">{{entry.title}}</a></h3>
+            <p ng-bind-html="entry.content"></p>
+            <span>{{entry.publishedDate}}</span>
         </li>
     </ul>
   </div>
