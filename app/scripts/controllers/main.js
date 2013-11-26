@@ -6,7 +6,7 @@ angular.module('APPersicetoApp')
       {'name': 'News', 'url': '#/news'},
       {'name': 'Eventi', 'url': '#/'},
       {'name': 'Mappa', 'url': '#/'},
-      {'name': 'Segnalazioni', 'url': '#/'},
+      {'name': 'Segnalazioni', 'url': '#/reports'},
       {'name': 'Meteo', 'url': '#/'},
       {'name': 'Sito', 'url': '#/'}
     ];
