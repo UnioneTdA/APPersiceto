@@ -1,0 +1,30 @@
+<div id="reports" class="standard-unit">
+  <h1>Segnalazioni</h1>
+    <div ng-controller="ReportsCtrl">
+        <form novalidate class="reportsForm" role="form">
+            <div class="form-group">
+                <label for="reportName" class="sr-only">Nome</label>
+                <input type="text" ng-model="report.reportName" name="reportName" required placeholder="inserisci il nome*" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label for="reportEmail" class="sr-only">Email</label>
+                <input type="email" ng-model="report.reportEmail" name="reportEmail" required placeholder="inserisci l'email*" class="form-control"/>
+            </div>
+            <div ng-show="form.reportEmail.$dirty && form.reportEmail.$invalid">Invalid:
+                <span ng-show="form.reportEmail.$error.required">Tell us your email.</span>
+                <span ng-show="form.reportEmail.$error.email">This is not a valid email.</span>
+            </div>
+            <div class="form-group">
+                <label for="reportPhone" class="sr-only">Telefono</label>
+                <input type="text" ng-model="report.reportPhone" name="reportPhone" placeholder="inserisci il telefono" class="form-control"/>
+            </div>
+            <div class="form-group">
+                <label for="reportMessage" class="sr-only">Messaggio</label>
+                <textarea class="form-control" name="reportMessage" rows="3" placeholder="inserisci il messaggio"></textarea>
+            </div>
+
+            <!-- <button ng-click="send(report)" ng-disabled="form.$invalid || isUnchanged(report)" class="btn btn-default">invia</button> -->
+            <button ng-click="send(report)" ng-disabled="form.$invalid || isUnchanged(report)">invia</button>
+        </form>
+    </div>
+</div>

@@ -16,6 +16,10 @@ angular.module('APPersicetoApp', [
         templateUrl: 'views/news.html',
         controller: 'NewsCtrl'
       })
+      .when('/reports', {
+        templateUrl: 'views/reports.html',
+        controller: 'ReportsCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });

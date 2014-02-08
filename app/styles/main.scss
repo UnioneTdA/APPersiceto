@@ -59,3 +59,14 @@ body {
         margin: 0 auto;
     }
 }
+
+
+#reports {
+    .reportsForm input.ng-invalid.ng-dirty {
+        background-color: #FA787E;
+    }
+
+    .reportsForm input.ng-valid.ng-dirty {
+        background-color: #78FA89;
+     }
+}
