@@ -321,6 +321,15 @@ module.exports = function (grunt) {
           ]
         }
       }
+    },
+    'gh-pages': {
+      public: {
+        options: {
+          base: 'dist',
+          message: 'Publish gh-pages'
+        },
+        src: ['**']
+      }
     }
   });
 
@@ -367,4 +376,6 @@ module.exports = function (grunt) {
     'test',
     'build'
   ]);
+
+  grunt.registerTask('deploy', ['build', 'gh-pages:public']);
 };
